@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/abonnement.css" />
+    <title>detail d'un abonnements</title>
+  </head>
+  <body>
+    <header>Détail d'un abonnement</header>
+    <div id="div_edit">
+      <div id="div_edit_identification">
+        <div>
+          <span class="labeltitre">IDENTIFICATION</span>
+          <label id="lbl_erreur_num" class="labelerreur"></label>
+        </div>
+        <div class="grid_identification">
+          <div id="div1">
+            <label for="edt_abonnement_num">numéro</label>
+            <span><input id="edt_abonnement_num" size="5" type="text" /></span>
+          </div>
+          <div id="div2">
+            <label for="date_abonnement_date">le</label>
+            <span><input id="date_abonnement_date" type="date" /></span>
+          </div>
+          <div id="div3">
+            <label for="edt_abonnement_com">commentaire</label>
+          </div>
+          <div id="div4">
+            <span>
+              <textarea
+                id="date_abonnement_date"
+                placeholder="Ajouter un commentaire"
+              ></textarea>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div id="div_edit_adherent">
+        <div>
+          <span class="labeltitre">ADHERENT</span>
+          <label id="lbl_erreur_num" class="labelerreur"></label>
+        </div>
+        <div id="div_adh">
+          <div id="div_adh1">
+            <label for="edt_adherent_num">numéro</label>
+            <span><input id="edt_abonnement_num" size="5" type="text" /></span>
+          </div>
+          <div id="div_adh2">
+            Adherent
+            <!-- nos infos -->
+            <p id="identification_adh">azert</p>
+            <p id="mel_adh">azerty</p>
+            <p id="adresse_adh">azerty</p>
+            <p id="code_postal_adh">oiuytrez</p>
+          </div>
+          <div id="div_adh3">
+            Catégorie SocioProfessionnelle
+            <!-- les infos -->
+            <p id="libellé_csp">azertyuiop</p>
+          </div>
+        </div>
+      </div>
+      <div id="div_edit_adhesion">
+        <div>
+          <span class="labeltitre">ADHESION</span>
+          <label id="lbl_erreur_num" class="labelerreur"></label>
+        </div>
+        <!-- fonction géré par le Typescript -->
+        <!-- OnClick detail affiché ci dessous  -->
+        <div id="abonnement_theme">
+          <!-- importabonnement_theme --><link href="" rel="import" />
+        </div>
+        <div id="abonnement_theme_edit">
+          <!-- importabonnement_theme -->
+          <link href="" rel="import" />
+        </div>
+
+        <!--  OnClick Ajouter -->
+        <div id="abonnement_theme">
+          <!-- importabonnement_theme --><link href="" rel="import" />
+          <!-- OnClick Modifier -->
+          <div id="abonnement_theme">
+            <!-- importabonnement_theme --><link href="" rel="import" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../controleur/inventaire.js"></script>
+</html>
