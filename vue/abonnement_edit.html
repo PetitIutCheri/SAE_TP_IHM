@@ -62,31 +62,52 @@
           </div>
         </div>
       </div>
+
       <div id="div_edit_adhesion">
         <div>
           <span class="labeltitre">ADHESION</span>
           <label id="lbl_erreur_num" class="labelerreur"></label>
         </div>
-        <!-- fonction géré par le Typescript -->
-        <!-- OnClick detail affiché ci dessous  -->
-        <div id="abonnement_theme">
-          <!-- importabonnement_theme --><link href="" rel="import" />
-        </div>
-        <div id="abonnement_theme_edit">
-          <!-- importabonnement_theme -->
-          <link href="" rel="import" />
-        </div>
 
-        <!--  OnClick Ajouter -->
         <div id="abonnement_theme">
-          <!-- importabonnement_theme --><link href="" rel="import" />
-          <!-- OnClick Modifier -->
-          <div id="abonnement_theme">
-            <!-- importabonnement_theme --><link href="" rel="import" />
+          <header>
+            Total : <span> <!-- chiffre + € --></span>
+          </header>
+          <div id="div_abonnement_theme_table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Libellé</th>
+                  <th>Tarif de base</th>
+                  <th>Version papier</th>
+                  <th>Montant</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="liste_bouton">
+            <input type="button" value="Ajouter" id="btn_ajouter" />
+            <input type="button" value="Modifier" id="btn_modifier" />
+            <input
+              type="button"
+              value="Supprimer"
+              id="btn_supprimer"
+              class="btnalerte"
+            />
           </div>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
+
   <script src="../controleur/inventaire.js"></script>
 </html>
