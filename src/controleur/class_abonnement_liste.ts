@@ -27,6 +27,10 @@ init(form : TAbonnementListeForm):void{
 
    this._grille = APIpageWeb.showArray(this.form.tableAbonnement.id,this._data,'abonNum',true)
 }
+
 }
+
+let vueAbonnementListe = new VueAbonnementListe
+export{vueAbonnementListe}
 
 
