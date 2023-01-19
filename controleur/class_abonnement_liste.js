@@ -1,4 +1,4 @@
-import { LesAbonnements } from "../modele/data_abonnement";
+import { LesAbonnements } from "../modele/data_abonnement.js";
 class VueAbonnementListe {
     constructor() { }
     get form() { return this._form; }
@@ -10,7 +10,7 @@ class VueAbonnementListe {
         this._form = form;
         const lesAbonnements = new LesAbonnements;
         this._data = lesAbonnements.listAll();
-        this._grille = APIpageWeb.showArray(this.form.tableAbonnement.id, this._data, 'abonNum', true);
+        this._grille = APIpageWeb.showArray(this.form.tableAbonnement.id, this._data, 'abon_num', true);
     }
 }
 let vueAbonnementListe = new VueAbonnementListe;

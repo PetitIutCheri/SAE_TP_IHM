@@ -1,4 +1,4 @@
-import { connexion } from "../modele/connexion";
+import { connexion } from "../modele/connexion.js";
 class UnAbonnement {
     constructor(abon_num = "", abon_date = "", abon_comment = "", adh_num = "") {
         this._abonNum = abon_num;

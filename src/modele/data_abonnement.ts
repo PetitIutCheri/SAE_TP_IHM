@@ -1,4 +1,4 @@
-import {connexion} from "../modele/connexion"
+import {connexion} from "../modele/connexion.js"
 class UnAbonnement {
 	private _abonNum : string; 
 	private _abonDate : string; 
