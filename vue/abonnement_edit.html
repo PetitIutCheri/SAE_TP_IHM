@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/abonnement.css" />
-    <title>detail d'un abonnements</title>
-  </head>
-  <body>
+
     <header>Détail d'un abonnement</header>
     <div id="div_edit">
       <div id="div_edit_identification">
@@ -30,7 +21,7 @@
           <div id="div4">
             <span>
               <textarea
-                id="date_abonnement_date"
+                id="area_commentaire"
                 placeholder="Ajouter un commentaire"
               ></textarea>
             </span>
@@ -68,7 +59,7 @@
           <span class="labeltitre">ADHESION</span>
           <label id="lbl_erreur_num" class="labelerreur"></label>
         </div>
-
+        <!-- ici ca va dasn un auttre html -->
         <div id="abonnement_theme">
           <header>
             Total : <span> <!-- chiffre + € --></span>
@@ -104,10 +95,15 @@
             />
           </div>
         </div>
+        <div class="liste_bouton">
+          <input type="button" value="Valider" id="btn_valider" />
+          <input type="button" value="Annuler" id="btn_annuler" />
+          <input
+            type="button"
+            value="Annuler"
+            id="btn_annuler"
+          />
+        </div>
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
 
-  <script src="../controleur/inventaire.js"></script>
-</html>
