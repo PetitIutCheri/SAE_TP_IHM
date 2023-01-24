@@ -1,109 +1,103 @@
-
-    <header>Détail d'un abonnement</header>
-    <div id="div_edit">
-      <div id="div_edit_identification">
-        <div>
-          <span class="labeltitre">IDENTIFICATION</span>
-          <label id="lbl_erreur_num" class="labelerreur"></label>
-        </div>
-        <div class="grid_identification">
-          <div id="div1">
-            <label for="edt_abonnement_num">numéro</label>
-            <span><input id="edt_abonnement_num" size="5" type="text" /></span>
-          </div>
-          <div id="div2">
-            <label for="date_abonnement_date">le</label>
-            <span><input id="date_abonnement_date" type="date" /></span>
-          </div>
-          <div id="div3">
-            <label for="edt_abonnement_com">commentaire</label>
-          </div>
-          <div id="div4">
-            <span>
-              <textarea
-                id="area_commentaire"
-                placeholder="Ajouter un commentaire"
-              ></textarea>
-            </span>
-          </div>
-        </div>
+<header id="div_titre"></header>
+<div id="div_edit">
+  <div id="div_edit_identification">
+    <div>
+      <span class="labeltitre">IDENTIFICATION</span>
+      <label id="lbl_erreur_num" class="labelerreur"></label>
+    </div>
+    <div class="grid_identification">
+      <div id="div1">
+        <label for="edt_abonnement_num">numéro</label>
+        <span><input id="edt_abonnement_num" size="5" type="text" /></span>
       </div>
-      <div id="div_edit_adherent">
-        <div>
-          <span class="labeltitre">ADHERENT</span>
-          <label id="lbl_erreur_num" class="labelerreur"></label>
-        </div>
-        <div id="div_adh">
-          <div id="div_adh1">
-            <label for="edt_adherent_num">numéro</label>
-            <span><input id="edt_abonnement_num" size="5" type="text" /></span>
-          </div>
-          <div id="div_adh2">
-            Adherent
-            <!-- nos infos -->
-            <p id="identification_adh">azert</p>
-            <p id="mel_adh">azerty</p>
-            <p id="adresse_adh">azerty</p>
-            <p id="code_postal_adh">oiuytrez</p>
-          </div>
-          <div id="div_adh3">
-            Catégorie SocioProfessionnelle
-            <!-- les infos -->
-            <p id="libellé_csp">azertyuiop</p>
-          </div>
-        </div>
+      <div id="div2">
+        <label for="date_abonnement_date">le</label>
+        <span><input id="date_abonnement_date" type="date" /></span>
       </div>
-
-      <div id="div_edit_adhesion">
-        <div>
-          <span class="labeltitre">ADHESION</span>
-          <label id="lbl_erreur_num" class="labelerreur"></label>
-        </div>
-        <!-- ici ca va dasn un auttre html -->
-        <div id="abonnement_theme">
-          <header>
-            Total : <span> <!-- chiffre + € --></span>
-          </header>
-          <div id="div_abonnement_theme_table">
-            <table>
-              <thead>
-                <tr>
-                  <th>Libellé</th>
-                  <th>Tarif de base</th>
-                  <th>Version papier</th>
-                  <th>Montant</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Cell</td>
-                  <td>Cell</td>
-                  <td>Cell</td>
-                  <td>Cell</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="liste_bouton">
-            <input type="button" value="Ajouter" id="btn_ajouter" />
-            <input type="button" value="Modifier" id="btn_modifier" />
-            <input
-              type="button"
-              value="Supprimer"
-              id="btn_supprimer"
-              class="btnalerte"
-            />
-          </div>
-        </div>
-        <div class="liste_bouton">
-          <input type="button" value="Valider" id="btn_valider" />
-          <input type="button" value="Annuler" id="btn_annuler" />
-          <input
-            type="button"
-            value="Annuler"
-            id="btn_annuler"
-          />
-        </div>
+      <div id="div3">
+        <label for="edt_abonnement_com">commentaire</label>
+      </div>
+      <div id="div4">
+        <span>
+          <textarea
+            id="area_commentaire"
+            placeholder="Ajouter un commentaire"
+          ></textarea>
+        </span>
       </div>
     </div>
+  </div>
+  <div id="div_edit_adherent">
+    <div>
+      <span class="labeltitre">ADHERENT</span>
+      <label id="lbl_erreur_num" class="labelerreur"></label>
+    </div>
+    <div id="div_adh">
+      <div id="div_adh1">
+        <label for="edt_adherent_num">numéro</label>
+        <span><input id="edt_abonnement_num" size="5" type="text" /></span>
+      </div>
+      <div id="div_adh2">
+        Adherent
+        <!-- nos infos -->
+        <p id="identification_adh">azert</p>
+        <p id="mel_adh">azerty</p>
+        <p id="adresse_adh">azerty</p>
+        <p id="code_postal_adh">oiuytrez</p>
+      </div>
+      <div id="div_adh3">
+        Catégorie SocioProfessionnelle
+        <!-- les infos -->
+        <p id="libellé_csp">azertyuiop</p>
+      </div>
+    </div>
+  </div>
 
+  <div id="div_edit_adhesion">
+    <div>
+      <span class="labeltitre">ADHESION</span>
+      <label id="lbl_erreur_num" class="labelerreur"></label>
+    </div>
+    <!-- ici ca va dasn un auttre html -->
+    <div id="abonnement_theme">
+      <header>
+        Total : <span> <!-- chiffre + € --></span>
+      </header>
+      <div id="div_abonnement_theme_table">
+        <table>
+          <thead>
+            <tr>
+              <th>Libellé</th>
+              <th>Tarif de base</th>
+              <th>Version papier</th>
+              <th>Montant</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="liste_bouton">
+        <input type="button" value="Ajouter" id="btn_ajouter" />
+        <input type="button" value="Modifier" id="btn_modifier" />
+        <input
+          type="button"
+          value="Supprimer"
+          id="btn_supprimer"
+          class="btnalerte"
+        />
+      </div>
+    </div>
+    <div class="liste_bouton">
+      <input type="button" value="Valider" id="btn_valider" />
+      <input type="button" value="Annuler" id="btn_annuler" />
+      <input type="button" value="Annuler" id="btn_annuler" />
+    </div>
+  </div>
+</div>
