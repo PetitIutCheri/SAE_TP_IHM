@@ -18,6 +18,9 @@ class UnTheme {
 }
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 class LesThemes {
+    listAll() {
+        throw new Error("Method not implemented.");
+    } // définition de la classe gérant les données de la table theme
     constructor() {
         // rien
     }
@@ -97,6 +100,9 @@ class UnThemeByAbonnement {
 }
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 class LesThemesByAbonnement {
+    static getTotal() {
+        throw new Error("Method not implemented.");
+    }
     constructor() {
         // rien
     }

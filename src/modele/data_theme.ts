@@ -25,7 +25,10 @@ class UnTheme {
 }
 type TThemes = {[key : string] : UnTheme }; // tableau d’objets UnTheme
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-class LesThemes { // définition de la classe gérant les données de la table theme
+class LesThemes {
+    listAll(): TdataSet {
+        throw new Error("Method not implemented.");
+    } // définition de la classe gérant les données de la table theme
 	constructor () {
 		// rien
 	}
@@ -117,7 +120,10 @@ class UnThemeByAbonnement {	// classe hérite de UnTheme
 
 type TThemesByAbonnement = {[key: string]: UnThemeByAbonnement };
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-class LesThemesByAbonnement {	 
+class LesThemesByAbonnement {
+    static getTotal(): number {
+        throw new Error("Method not implemented.");
+    }	 
 	constructor () {
 		// rien
 	}
